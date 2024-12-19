@@ -26,6 +26,17 @@
       right: 50px; /* Align to the right */
       gap: 40px;
     }
+    .image-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px; /* Space between images */
+      margin-left: 5px;
+    }
+    img {
+      max-width: 100px; /* Adjust size as needed */
+      height: auto;
+    }
     .caveat-cursive {
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
@@ -50,9 +61,15 @@
         font-size: 36px;
     }
     h1{
-        margin-top: 150px;
+        margin-top: 100px;
         margin-right: 10px;
-        margin-left: 10px;
+        font-size: 25px;
+        color:rgb(85, 73, 73);
+        font-family: "Headland One";
+    }
+    h2{
+        margin-top: 50px;
+        margin-right: 10px;
         font-size: 25px;
         color:rgb(85, 73, 73);
         font-family: "Headland One";
@@ -85,4 +102,13 @@
     <button class="external">
         Course List
     </button>
+</div>
+<h2>Technical Skills</h2>
+<div class="image-container">
+    <img src="assets/c.png">
+    <img src="assets/cpp.png">
+    <img src="assets/html.png">
+    <img src="assets/java.png">
+    <img src="assets/js.png">
+    <img src="assets/python.png">
 </div>
