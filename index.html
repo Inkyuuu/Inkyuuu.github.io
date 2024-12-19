@@ -1,115 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amy Zeng Portfolio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
 
-        body {
-            margin: 0;
-            font-family: "Headland One", serif;
-        }
-
-        /* Background Color Blocking */
-        .section {
-            width: 100%;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        
-        .section-1 {
-            background: linear-gradient(to right, #FFB6C1, #FF69B4);
-            color: white;
-        }
-        .section-2 {
-            background: linear-gradient(to right, #FFE4E1, #FFDAB9);
-            color: rgb(85, 73, 73);
-        }
-
-        .section-3 {
-            background: linear-gradient(to right, #98FB98, #00FA9A);
-            color: white;
-        }
-
-        /* General Button Styling */
-        button {
-            cursor: pointer;
-            border: none;
-            border-radius: 10px;
-            padding: 10px 20px;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-
-        .home {
-            font-family: 'Meow Script', cursive;
-            font-size: 36px;
-            background-color: rgba(255, 255, 255, 0.8);
-            color: rgb(85, 73, 73);
-            margin: 20px;
-        }
-
-        .home:hover {
-            background-color: rgb(255, 228, 225);
-            transform: scale(1.1);
-        }
-
-        .external {
-            background-color: rgba(255, 228, 225, 0.8);
-            color: rgb(85, 73, 73);
-            font-size: 20px;
-            font-family: 'Caveat', cursive;
-            margin: 10px;
-        }
-
-        .external:hover {
-            background-color: rgb(255, 182, 193);
-            transform: scale(1.05);
-        }
-
-        .text-body {
-            margin: 0 auto;
-            max-width: 800px;
-            line-height: 1.8;
-            font-size: 20px;
-        }
-
-        h1 {
-            font-size: 30px;
-            margin: 20px 0;
-        }
-
-        .right-side-list {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="section section-1">
-        <button class="home">Amy Zeng</button>
-        <h1>printf("Hello, World!");</h1>
-    </div>
-
-    <div class="section section-2">
-        <div class="text-body">
-            My name is Amy Zeng, I’m a third-year undergraduate Computer Science major at the University of California, Santa Cruz. I’m interested in backend development, but I’m always looking for opportunities to expand my horizons.
-        </div>
-    </div>
-
-    <div class="section section-3">
-        <div class="right-side-list">
-            <button class="external">Resume</button>
-            <button class="external">GitHub</button>
-            <button class="external">Course List</button>
-        </div>
-    </div>
-
-</body>
-</html>
+    
+    .external{
+        background-color: transparent;
+        border: none;
+        color: rgb(210, 194, 194);
+        font-size: 60px;
+        font-family:'Caveat', cursive;
+        margin-right: 15px;
+    }
+    .external:hover{
+        color: rgb(241, 222, 222);
+    }
+    .external:active{
+        color: rgb(143, 134, 134);
+    }
+    .right-side-list {
+      display: flex; /* Enable Flexbox */
+      flex-direction: column; /* Stack items vertically */
+      position: absolute; /* Position the container */
+      top: 150px; /* Start at the top */
+      right: 50px; /* Align to the right */
+      gap: 40px;
+    }
+    .caveat-cursive {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    }
+    .meow-script-regular {
+    font-family: "Meow Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
+    .headland-one-regular {
+    font-family: "Headland One", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    .home{
+        background-color: transparent;
+        border: none;
+        color:rgb(233, 220, 220);
+        font-family: 'Meow Script', cursive;
+        font-size: 36px;
+    }
+    h1{
+        margin-top: 150px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 25px;
+        color:rgb(85, 73, 73);
+        font-family: "Headland One";
+    }
+    .text-body{
+        margin-left: 50px;
+        margin-right: 800px;
+        font-size: 20px;
+        color:rgb(85, 73, 73);
+        font-family: "Headland One";
+    }
+</style>
+<body style="background-color: rgb(176,164,164);">
+<button class="home">
+    Amy Zeng
+</button>
+<h1>printf("Hello, World!");</h1>
+<body class= "text-body">My name is Amy Zeng, I’m a third-year 
+    undergraduate Computer Science major at the 
+    University of California, Santa Cruz. I’m 
+    interested in backend development, but I’m always looking 
+    for opportunities to expand my horizons. </body>
+<div class="right-side-list">
+    <button class="external">
+        Resume
+    </button>
+    <button class="external">
+        GitHub
+    </button>
+    <button class="external">
+        Course List
+    </button>
+</div>
